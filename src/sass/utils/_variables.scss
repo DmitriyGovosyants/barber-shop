@@ -2,4 +2,39 @@
   //? ANIMATION
   --animation-duration: 250ms;
   --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  //? COLOR CSS variables\
+  --title-primary-color: #ffffff;
+  --title-secondary-color: #303030;
+
+  --text-primary-color: #555555;
+  --text-secondary-color: #9da4bd;
+
+  --accent-color: #ff6c00;
+
+  --bgd-primary-color: #ffffff;
+  --bgd-secondary-color: #f7f7f7;
+  --bgd-tertiary-color: #191c26;
+  //? FONT SASS variables
+  // font-weight
+  $fw-400: 400;
+  $fw-600: 600;
+  $fw-700: 700;
+
+  // font-size
+  $fs-11: 11px;
+  $fs-12: 12px;
+  $fs-14: 14px;
+  $fs-16: 16px;
+  $fs-18: 18px;
+  $fs-28: 28px;
+  $fs-40: 42px;
+  $fs-48: 48px;
+  $fs-72: 72px;
+  // letter-spacing
+  $ls-00: 0em;
+  $ls-02: 0.02em;
+  $ls-05: 0.05em;
+  $ls-09: 0.09em;
+  $ls-10: 0.1em;
+  $ls-20: 0.2em;
 }
