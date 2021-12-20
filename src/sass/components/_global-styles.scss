@@ -1,0 +1,35 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  //   font-size: $fs-14;
+  //   line-height: 1.17;
+  //   letter-spacing: $ls-03;
+  //   color: var(--text-primary);
+
+  //   background-color: var(--bgd-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
