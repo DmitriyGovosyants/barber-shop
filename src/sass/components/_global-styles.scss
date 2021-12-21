@@ -1,11 +1,11 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  //   font-size: $fs-14;
-  //   line-height: 1.17;
-  //   letter-spacing: $ls-03;
-  //   color: var(--text-primary);
+  font-size: var(--fs-14);
+  line-height: 1.86;
+  letter-spacing: var(--ls-02);
+  color: var(--text-primary-color);
 
-  //   background-color: var(--bgd-primary);
+  background-color: var(--bgd-primary-color);
 }
 
 h1,

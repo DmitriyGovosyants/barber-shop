@@ -1,0 +1,28 @@
+.button {
+  min-width: 160px;
+  height: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  font-weight: var(--fw-600);
+  font-size: var(--fs-12);
+  line-height: 1.36;
+  letter-spacing: var(--ls-09);
+  text-transform: uppercase;
+  color: var(--secondary-color);
+
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+
+  &:hover,
+  &:focus {
+    color: var(--primary-color);
+
+    background-color: var(--accent-color);
+  }
+
+  &--wide {
+    min-width: 194px;
+  }
+}
