@@ -4,14 +4,9 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './base/normalize';
-@import './utils/variables';
-@import './utils/mixins';
-
-@import './components/global-styles';
-@import './components/base-layout';
-@import './components/button';
-@import './components/socials';
+@import './base/module';
+@import './utils/module';
+@import './components/module';
 
 @import './layout/page-header/module';
 @import './layout/hero/module';

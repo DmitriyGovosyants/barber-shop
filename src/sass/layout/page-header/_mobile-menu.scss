@@ -4,7 +4,7 @@
   right: 0;
   z-index: 2;
 
-  min-width: 337px;
+  width: 337px;
   height: 100vh;
 
   background-color: var(--bgd-primary-color);
@@ -25,7 +25,8 @@
   padding-left: 40px;
 }
 
-.menu-container__connect {
+.menu-container__connect,
+.menu-container__company-socials {
   margin-top: 64px;
 }
 
