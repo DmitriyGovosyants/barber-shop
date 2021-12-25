@@ -1,0 +1,37 @@
+.container {
+  outline: 2px solid tomato;
+  width: 100vw;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 31px;
+  padding-left: 31px;
+
+  @include mq(mobile) {
+    width: 480px;
+  }
+  @include mq(tablet) {
+    width: 768px;
+    padding-right: 39px;
+    padding-left: 39px;
+  }
+  @include mq(desktop) {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  @include mq(tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}

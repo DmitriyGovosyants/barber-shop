@@ -1,0 +1,24 @@
+.site-nav {
+}
+
+.site-nav__item {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.site-nav__link {
+  font-weight: var(--fw-600);
+  font-size: var(--fs-18);
+  line-height: 1.36;
+  letter-spacing: var(--ls-10);
+  color: var(--secondary-color);
+
+  transition: color var(--animation-duration) var(--animation-timing-function);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

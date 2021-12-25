@@ -12,4 +12,14 @@
 @import './components/base-layout';
 @import './components/button';
 @import './components/socials';
-@import './components/backdrop';
+
+@import './layout/page-header/module';
+@import './layout/hero/module';
+@import './layout/about/module';
+@import './layout/prices/module';
+@import './layout/reasons/module';
+@import './layout/team/module';
+@import './layout/gallery/module';
+@import './layout/online-recording/module';
+@import './layout/contacts/module';
+@import './layout/page-footer/module';
