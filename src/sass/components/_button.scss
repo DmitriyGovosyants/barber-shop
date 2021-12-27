@@ -19,6 +19,10 @@
   transition: color var(--animation-duration) var(--animation-timing-function),
     background-color var(--animation-duration) var(--animation-timing-function);
 
+  @include mq(tablet) {
+    color: var(--primary-color);
+  }
+
   &:hover,
   &:focus {
     color: var(--primary-color);

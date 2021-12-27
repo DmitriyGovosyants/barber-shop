@@ -1,9 +1,24 @@
 .connect {
+  @include mq(tablet) {
+    display: flex;
+    align-items: center;
+  }
+
+  @include mq(tablet-only) {
+    position: relative;
+
+    flex-direction: column-reverse;
+  }
+
+  &--is-hidden {
+    @include mq(mobile-only) {
+      display: none;
+    }
+  }
 }
 
 .connect__phone {
   display: block;
-  margin-bottom: 24px;
 
   font-weight: var(--fw-600);
   font-size: var(--fs-18);
@@ -13,6 +28,26 @@
   color: var(--secondary-color);
 
   transition: color var(--animation-duration) var(--animation-timing-function);
+
+  @include mq(mobile-only) {
+    margin-bottom: 24px;
+  }
+
+  @include mq(tablet) {
+    font-size: var(--fs-12);
+
+    color: var(--primary-color);
+  }
+
+  @include mq(tablet-only) {
+    position: absolute;
+    top: 60px;
+    right: 37px;
+  }
+
+  @include mq(desktop) {
+    margin-right: 40px;
+  }
 
   &:hover,
   &:focus {

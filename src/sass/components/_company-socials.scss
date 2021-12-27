@@ -15,7 +15,7 @@
   }
 }
 .company-socials__item {
-  &:nth-child(2) {
+  &:not(:first-child) {
     margin-top: 24px;
     padding-left: 100px;
   }

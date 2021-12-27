@@ -1,9 +1,26 @@
 .site-nav {
+  @include mq(tablet) {
+    display: flex;
+  }
+
+  &--is-hidden {
+    @include mq(mobile-only) {
+      display: none;
+    }
+  }
 }
 
 .site-nav__item {
-  &:not(:last-child) {
-    margin-bottom: 24px;
+  @include mq(mobile-only) {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  @include mq(tablet) {
+    &:not(:first-child) {
+      margin-left: 24px;
+    }
   }
 }
 
@@ -16,6 +33,13 @@
 
   transition: color var(--animation-duration) var(--animation-timing-function);
   cursor: pointer;
+
+  @include mq(tablet) {
+    padding: 25px 0;
+
+    font-size: var(--fs-12);
+    color: var(--primary-color);
+  }
 
   &:hover,
   &:focus {

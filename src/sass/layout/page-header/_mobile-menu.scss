@@ -44,6 +44,10 @@
   cursor: pointer;
   transition: fill var(--animation-duration) var(--animation-timing-function);
 
+  @include mq(tablet) {
+    display: none;
+  }
+
   &--open {
     fill: var(--bgd-primary-color);
   }
