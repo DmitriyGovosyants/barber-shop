@@ -7,6 +7,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 479px) {
+    width: 100vw;
+  }
+
+  @include mq(tablet) {
+    top: 0;
+  }
+
+  @include mq(desktop) {
+    top: 32px;
+  }
 }
 
 .logo {

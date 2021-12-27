@@ -5,9 +5,9 @@
   }
 
   @include mq(tablet-only) {
-    position: relative;
-
     flex-direction: column-reverse;
+
+    padding-top: 40px;
   }
 
   &--is-hidden {
@@ -40,9 +40,7 @@
   }
 
   @include mq(tablet-only) {
-    position: absolute;
-    top: 60px;
-    right: 37px;
+    margin-top: 20px;
   }
 
   @include mq(desktop) {

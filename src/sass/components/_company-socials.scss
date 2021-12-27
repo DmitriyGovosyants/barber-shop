@@ -1,8 +1,5 @@
 .company-socials {
-}
-.company-socials__list {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 
   &::before {
@@ -13,11 +10,27 @@
 
     background-color: var(--secondary-color);
   }
+
+  @include mq(mobile-only) {
+    flex-wrap: wrap;
+  }
+
+  @include mq(tablet) {
+    transform: rotate(-90deg);
+  }
 }
 .company-socials__item {
-  &:not(:first-child) {
-    margin-top: 24px;
-    padding-left: 100px;
+  @include mq(mobile-only) {
+    &:not(:first-child) {
+      margin-top: 24px;
+      padding-left: 100px;
+    }
+  }
+
+  @include mq(tablet) {
+    &:not(:first-child) {
+      margin-left: 40px;
+    }
   }
 }
 .company-socials__link {

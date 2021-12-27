@@ -1,0 +1,38 @@
+.hero {
+  height: 580px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @include mq(tablet) {
+    height: 680px;
+  }
+}
+
+.container__hero {
+  display: flex;
+}
+
+.hero__left {
+  display: flex;
+  justify-content: end;
+  width: 109px;
+
+  @include mq(mobile-only) {
+    display: none;
+  }
+}
+
+.hero__right {
+  padding-top: 208px;
+  padding-bottom: 183px;
+
+  @include mq(tablet) {
+    padding-top: 280px;
+    padding-bottom: 234px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 272px;
+    padding-bottom: 206px;
+  }
+}
