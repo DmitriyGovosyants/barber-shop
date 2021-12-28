@@ -16,7 +16,8 @@
   }
 
   @include mq(tablet) {
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translate(40px, 50px);
+    transform-origin: bottom left;
   }
 }
 .company-socials__item {

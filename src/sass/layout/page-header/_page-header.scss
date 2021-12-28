@@ -22,5 +22,9 @@
 }
 
 .logo {
-  fill: var(--bgd-primary-color);
+  fill: var(--primary-color);
+
+  @include mq(tablet) {
+    fill: var(--secondary-color);
+  }
 }
