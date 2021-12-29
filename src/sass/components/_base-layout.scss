@@ -122,17 +122,18 @@
   font-size: var(--fs-16);
   line-height: 1.63;
   letter-spacing: var(--ls-02);
-  color: var(--text-secondary-color);
+  color: var(--text-primary-color);
 
   &--main {
+    color: var(--text-secondary-color);
     width: 73%;
 
     @include mq(tablet) {
-      width: 349px;
+      width: 69%;
     }
 
     @include mq(desktop) {
-      width: 400px;
+      width: 41%;
 
       font-size: var(--fs-18);
       line-height: 1.66;
