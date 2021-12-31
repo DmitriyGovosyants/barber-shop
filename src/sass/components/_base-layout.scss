@@ -38,6 +38,42 @@
   }
 }
 
+.section__title {
+  margin-top: 20px;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-42);
+  line-height: 1.17;
+  letter-spacing: var(--ls-05);
+
+  color: var(--secondary-color);
+
+  &--main {
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: var(--fs-48);
+    color: var(--primary-color);
+
+    @include mq(desktop) {
+      font-size: var(--fs-72);
+    }
+  }
+
+  &--small {
+    font-size: var(--fs-28);
+
+    @include mq(desktop) {
+      font-size: var(--fs-42);
+    }
+  }
+
+  &--white {
+    color: var(--primary-color);
+  }
+}
+
 .section__pre-title {
   display: flex;
   align-items: center;
@@ -80,39 +116,6 @@
     &::before {
       background-color: var(--primary-color);
     }
-  }
-}
-
-.section__title {
-  margin-top: 20px;
-
-  font-family: 'Raleway', sans-serif;
-  font-weight: var(--fw-700);
-  font-size: var(--fs-42);
-  line-height: 1.17;
-  letter-spacing: var(--ls-05);
-
-  color: var(--secondary-color);
-
-  &--main {
-    font-size: var(--fs-48);
-    color: var(--primary-color);
-
-    @include mq(desktop) {
-      font-size: var(--fs-72);
-    }
-  }
-
-  &--small {
-    font-size: var(--fs-28);
-
-    @include mq(desktop) {
-      font-size: var(--fs-42);
-    }
-  }
-
-  &--white {
-    color: var(--primary-color);
   }
 }
 
