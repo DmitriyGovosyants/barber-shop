@@ -1,7 +1,36 @@
 .reasons {
+  @include mq(desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.reasons__content {
+  @include mq(tablet-only) {
+    padding-right: 189px;
+  }
+
+  @include mq(desktop) {
+    margin-left: 130px;
+    padding-right: 70px;
+  }
+}
+
+.reasons__list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 44px;
+
+  @include mq(notDesktop) {
+    margin-top: 44px;
+  }
+
+  @include mq(tablet) {
+    padding-left: 240px;
+  }
+
+  @include mq(desktop) {
+    padding-left: 100px;
+  }
 }
 
 .reasons__item {
@@ -12,7 +41,6 @@
   padding-right: 32px;
   padding-left: 32px;
 
-  text-align: center;
   background-color: var(--bgd-secondary-color);
 
   &:nth-child(odd) {
@@ -22,6 +50,23 @@
   &:nth-last-child(n + 3) {
     margin-bottom: 30px;
   }
+
+  @include mq(tablet) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @include mq(desktop) {
+    flex-basis: 170px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.reasons__box {
+  width: 130px;
+
+  text-align: center;
 }
 
 .reasons__value {
