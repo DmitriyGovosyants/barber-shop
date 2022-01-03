@@ -44,6 +44,10 @@
   &--darker {
     background-color: var(--bgd-secondary-color);
   }
+
+  &--darkest {
+    background-color: var(--bgd-tertiary-color);
+  }
 }
 
 .section__title {

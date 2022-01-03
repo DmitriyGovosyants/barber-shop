@@ -1,0 +1,60 @@
+.online-record {
+  text-align: center;
+}
+
+.online-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 44px;
+}
+
+.online-form__box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 44px;
+}
+
+.online-form__input {
+  padding-bottom: 8px;
+
+  color: var(--text-secondary-color);
+
+  background-color: transparent;
+
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(157, 164, 189, 0.4);
+
+  transition: border var(--animation-duration) var(--animation-timing-function);
+
+  &::placeholder {
+    font-weight: var(--fw-600);
+    font-size: var(--fs-11);
+    line-height: 1.36;
+    letter-spacing: var(--ls-10);
+    text-transform: uppercase;
+    color: rgb(157, 164, 189, 0.4);
+
+    transition: color var(--animation-duration) var(--animation-timing-function);
+  }
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid var(--primary-color);
+
+    &::placeholder {
+      color: var(--primary-color);
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 44px;
+  }
+
+  &--comment {
+    padding-bottom: 60px;
+
+    resize: none;
+  }
+}
