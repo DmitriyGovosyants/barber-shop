@@ -1,0 +1,116 @@
+.contacts {
+  text-align: center;
+  background-color: var(--bgd-tertiary-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contacts__address {
+  margin-top: 40px;
+}
+
+.contacts__work-time {
+  margin-top: 44px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address__list {
+}
+
+.address__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+
+.address__icon {
+  margin-right: 16px;
+}
+
+.address__link {
+  font-size: var(--fs-18);
+  line-height: 1.67;
+  letter-spacing: var(--ls-02);
+
+  color: var(--text-secondary-color);
+
+  &--underline {
+    text-decoration: underline;
+  }
+}
+
+.work-time {
+}
+
+.work-time__title {
+}
+
+.work-time__text {
+}
+
+.webp .contacts {
+  background-image: url('../images/contacts/contacts-480.webp');
+
+  @include mq(retina) {
+    & {
+      background-image: url('../images/contacts/contacts-480@2x.webp');
+    }
+  }
+
+  @include mq(tablet) {
+    background-image: url('../images/contacts/contacts-768.webp');
+
+    @include mq(retina) {
+      & {
+        background-image: url('../images/contacts/contacts-768@2x.webp');
+      }
+    }
+  }
+
+  @include mq(desktop) {
+    background-image: url('../images/contacts/contacts-625.webp');
+
+    @include mq(retina) {
+      & {
+        background-image: url('../images/contacts/contacts-625@2x.webp');
+      }
+    }
+  }
+}
+
+.no-webp .contacts {
+  background-image: url('../images/contacts/contacts-480.png');
+
+  @include mq(retina) {
+    & {
+      background-image: url('../images/contacts/contacts-480@2x.png');
+    }
+  }
+
+  @include mq(tablet) {
+    background-image: url('../images/contacts/contacts-768.png');
+
+    @include mq(retina) {
+      & {
+        background-image: url('../images/contacts/contacts-768@2x.png');
+      }
+    }
+  }
+
+  @include mq(desktop) {
+    background-image: url('../images/contacts/contacts-625.png');
+
+    @include mq(retina) {
+      & {
+        background-image: url('../images/contacts/contacts-625@2x.png');
+      }
+    }
+  }
+}

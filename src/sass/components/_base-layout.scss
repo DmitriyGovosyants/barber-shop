@@ -85,6 +85,10 @@
     color: var(--primary-color);
   }
 
+  &--without-pre-title {
+    margin-top: 0;
+  }
+
   &--is-hidden {
     position: absolute;
     white-space: nowrap;
