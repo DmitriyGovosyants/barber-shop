@@ -1,0 +1,41 @@
+.about {
+  @include mq(tablet) {
+    display: flex;
+  }
+}
+
+.about__list {
+  flex-shrink: 0;
+
+  @include mq(mobile-only) {
+    display: none;
+  }
+
+  @include mq(desktop) {
+    display: flex;
+  }
+}
+
+.about__item {
+  @include mq(tablet-only) {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+
+  @include mq(desktop) {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+}
+
+.about__content {
+  @include mq(tablet) {
+    margin-left: 30px;
+  }
+
+  @include mq(desktop) {
+    margin-left: 64px;
+  }
+}
