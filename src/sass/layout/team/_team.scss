@@ -1,0 +1,47 @@
+.team {
+  margin-top: 44px;
+
+  @include mq(desktop) {
+    display: flex;
+  }
+}
+
+.team__item {
+  @include mq(notDesktop) {
+    &:not(:last-child) {
+      margin-bottom: 64px;
+    }
+  }
+
+  @include mq(desktop) {
+    width: calc((100% - 60px) / 3);
+
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+}
+
+.team__content {
+  padding-top: 30px;
+
+  text-align: center;
+}
+
+.team__title {
+  margin-bottom: 8px;
+
+  font-size: var(--fs-18);
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.team__text {
+  margin-bottom: 30px;
+
+  font-size: var(--fs-14);
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
