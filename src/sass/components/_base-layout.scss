@@ -1,6 +1,4 @@
 .container {
-  outline: 2px solid tomato;
-
   margin-right: auto;
   margin-left: auto;
   padding-right: 31px;
@@ -62,7 +60,6 @@
 
 .section__wrapper {
   @include mq(desktop) {
-    outline: 2px solid tomato;
     display: flex;
     width: 1200px;
     margin-right: auto;
