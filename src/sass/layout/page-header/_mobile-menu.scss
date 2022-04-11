@@ -20,14 +20,14 @@
 }
 
 .menu-container__wrapper {
-  padding-top: 118px;
+  padding-top: 20px;
   padding-right: 15px;
   padding-left: 40px;
 }
 
 .menu-container__connect,
 .menu-container__company-socials {
-  margin-top: 64px;
+  margin-top: 40px;
 }
 
 .button-mobile {
@@ -54,7 +54,7 @@
 
   &--close {
     position: absolute;
-    top: 48px;
+    top: 20px;
     right: 31px;
 
     fill: var(--secondary-color);
