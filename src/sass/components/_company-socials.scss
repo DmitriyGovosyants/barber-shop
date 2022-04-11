@@ -27,6 +27,10 @@
       margin-top: 24px;
       padding-left: 100px;
     }
+
+    &--footer:not(:first-child) {
+      margin-top: 0px;
+    }
   }
 
   @include mq(tablet) {
@@ -34,6 +38,8 @@
       margin-left: 40px;
     }
   }
+
+  
 }
 
 .company-socials__link {
