@@ -1,0 +1,28 @@
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 0.5rem;
+
+    border-radius: 100%;
+    background-color: #b1bbe0;
+    border: none;
+
+    transition: background-color var(--animation-duration) var(--animation-timing-function);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--accent-color);
+    }
+}
+
+.is-hidden {
+    display: none;
+}
+
+.back-to-top-icon {
+    width: 20px;
+    height: 20px;
+
+    color: black;
+}
