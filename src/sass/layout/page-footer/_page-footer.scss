@@ -1,14 +1,16 @@
 .footer {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   @include mq(tablet) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
 .footer__copy {
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
 
   font-weight: var(--fw-600);
