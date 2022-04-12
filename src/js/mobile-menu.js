@@ -5,9 +5,9 @@ const mobileMenuNav = document.querySelector('.js-mobile-menu-nav');
 
 openMenuBtn.addEventListener('click', toggleMenu);
 closeMenuBtn.addEventListener('click', toggleMenu);
-mobileMenuNav.addEventListener('click', mobileMenuCloseOnClickAnchor);
-document.addEventListener('click', closeMobileMenuOnClickOutside);
-window.matchMedia('(min-width: 768px)').addEventListener('change', mobileMenuCloseIfMediaTablet);
+mobileMenuNav.addEventListener('click', onClickAnchorCloseMobileMenu);
+document.addEventListener('click', onClickOutsideCloseMobileMenu);
+window.matchMedia('(min-width: 768px)').addEventListener('change', onTabletMQCloseMobileMenu);
 
 function toggleMenu() {
   const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -20,12 +20,12 @@ function toggleMenu() {
   bodyScrollLock[scrollLockMethod](document.body);
 };
 
-function mobileMenuCloseOnClickAnchor(e) {
+function onClickAnchorCloseMobileMenu(e) {
   if (e.target.nodeName !== 'A') return;
   toggleMenu();
 };
 
-function closeMobileMenuOnClickOutside(e) {
+function onClickOutsideCloseMobileMenu(e) {
   const targetMobileMenu = e.target.closest('#mobile-menu');
   const targetMobileMenuOpenBtn = e.target.classList[0] === 'js-svg-open-btn';
   const mobileMenuIsOpen = document.querySelector('#mobile-menu.is-open');
@@ -35,7 +35,7 @@ function closeMobileMenuOnClickOutside(e) {
   }
 };
 
-function mobileMenuCloseIfMediaTablet(e) {
+function onTabletMQCloseMobileMenu(e) {
   if (!e.matches) return;
   mobileMenu.classList.remove('is-open');
   openMenuBtn.setAttribute('aria-expanded', false);
