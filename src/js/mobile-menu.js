@@ -34,7 +34,7 @@ function onClickRecordBtnMobileMenuClose(e) {
 
 function onClickOutsideMobileMenuClose(e) {
   const targetMobileMenu = e.target.closest('#mobile-menu');
-  const targetMobileMenuOpenBtn = e.target.classList[0] === 'js-svg-open-btn';
+  const targetMobileMenuOpenBtn = e.target.classList.contains('js-open-btn');
   const mobileMenuIsOpen = document.querySelector('#mobile-menu.is-open');
 
   if (!targetMobileMenu && !targetMobileMenuOpenBtn && mobileMenuIsOpen) {
