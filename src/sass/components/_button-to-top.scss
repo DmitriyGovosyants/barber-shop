@@ -1,9 +1,10 @@
 .back-to-top {
     position: fixed;
-    right: 2rem;
-    bottom: 2rem;
-    padding: 0.5rem;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 10px;
 
+    color: var(--primary-color);
     border-radius: 100%;
     background-color: #b1bbe0;
     border: none;
